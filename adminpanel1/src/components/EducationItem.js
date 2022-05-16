@@ -2,6 +2,7 @@ import React from 'react'
 import "./EducationTable.css"
 
 const EducationItem = (props) => {
+
     return (
         <>
             <table className='table'>
@@ -14,8 +15,6 @@ const EducationItem = (props) => {
                     </tr>
                 </tbody>
             </table>
-            <div>
-            </div>
         </>
     )
 }

@@ -10,8 +10,7 @@ const EducationTable = (props) => {
     }
 
     return (
-        <> 
-           {/* <div className='gap'> */}
+        <>
             <table className='table'>
                 <tbody>
                     {!i && <tr className='tr'>
@@ -22,7 +21,7 @@ const EducationTable = (props) => {
                     </tr>}
                 </tbody>
             </table>
-            {/* </div> */}
+
             {props.allEduction.map((e, index) =>
                 <React.Fragment key={index}>
                     <EducationItem
@@ -34,7 +33,6 @@ const EducationTable = (props) => {
                 </React.Fragment>
             )}
         </>
-
     )
 }
 

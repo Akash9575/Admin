@@ -1,4 +1,4 @@
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -8,41 +8,38 @@
     border-radius: 10px;
 }
 
-.formItem{
+.formItem {
     display: flex;
     justify-content: space-between;
 }
 
-.formItem label{
+.formItem label {
     font-size: 20px;
     margin: 5px;
     font-weight: 600;
 }
 
-.formInput{
+.formInput {
     width: 50%;
     padding: 10px;
     margin: 5px;
 }
 
-.form button{
-
+.form button {
     font-size: 20px;
     padding: 10px;
     margin: 10px;
     width: 200px;
     font-weight: 700;
-    /* background-color: rgb(162, 105, 215); */
     border: none;
     border-radius: 5px;
 }
 
-.gender{
-    /* background-color: blueviolet; */
+.gender {
     padding-right: 115px;
 }
 
-.err{
+.err {
     font-size: 24px;
     font-weight: 600;
     color: red;

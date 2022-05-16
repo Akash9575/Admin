@@ -5,10 +5,9 @@ ul {
     display: flex;
     background-color: rgb(227, 145, 145);
     justify-content: flex-end;
+}
 
-  }
-
-ul li{
+ul li {
     background-color: rgb(170, 230, 230);
     padding: 10px;
     margin: 5px;

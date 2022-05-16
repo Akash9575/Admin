@@ -1,12 +1,10 @@
-.table{
+.table {
     background-color: rgb(0, 255, 81);
-    align-items:flex-start;
+    align-items: flex-start;
     border: 1px solid rgb(0, 0, 0);
 }
 
-.tr{
+.tr {
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid black; */
 }
-
