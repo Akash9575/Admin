@@ -1,0 +1,54 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto;
+    background-color: aqua;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.formItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formItem label{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.formInput{
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.form button{
+
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-weight: 700;
+    /* background-color: rgb(162, 105, 215); */
+    border: none;
+    border-radius: 5px;
+}
+
+.gender{
+    /* background-color: blueviolet; */
+    padding-right: 115px;
+}
+
+.err{
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+    background-color: rgb(194, 146, 239);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}

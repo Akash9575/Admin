@@ -1,0 +1,14 @@
+.details{
+    background-color: lawngreen;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(183, 183, 183);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.item{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
