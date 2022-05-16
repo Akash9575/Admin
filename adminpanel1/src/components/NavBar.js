@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import "./NavBar.css"
 
 const NavBar = (props) => {
@@ -22,7 +21,6 @@ const NavBar = (props) => {
     const logout = () => {
         localStorage.clear();
         props.setChangeNavbar(false)
-
     }
 
     return (

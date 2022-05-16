@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import url from './Helper'
 import "./UserDetails.css"
 
 const UserDetails = () => {
@@ -7,7 +8,7 @@ const UserDetails = () => {
     let userdata = JSON.parse(localStorage.getItem("loginData"))
 
     useEffect(() => {
-        fetch("http://localhost:5000/userDetails",
+        fetch(`${url}userDetails`,
             {
                 method: "get",
                 headers: {

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import SecondForm from './SecondForm'
 import Input from '../Input'
+import url from '../allData/Helper'
 import "./Form.css"
 
 const Form = () => {
+
     const [next, setNext] = useState(false)
     const [error, setError] = useState("")
-
     const [data, setData] = useState({
         fname: "",
         lname: "",
@@ -20,7 +21,7 @@ const Form = () => {
     const HandleSubmit = (e) => {
         e.preventDefault()
 
-        fetch("http://localhost:5000/create", {
+        fetch(`${url}create`, {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'
@@ -113,12 +114,12 @@ const Form = () => {
                         </div>
                         <div className='formItem'>
                             <label>Gender</label>
-                            <div className='gender'>
-                                <Input type="radio" name="gender" value="male" onChange={HandleInput} />
-                                <label htmlFor="male">Male</label>
-                                <Input type="radio" name="gender" value="female" onChange={HandleInput} />
-                                <label htmlFor="female">Female</label>
-                            </div>
+                            <select name="gender" className='formDropDown' value={data.gender} onChange={HandleInput}>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                         <div className='formItem'>
                             <label>Password</label>

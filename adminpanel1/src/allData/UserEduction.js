@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import UserAllEducation from './UserAllEducation'
+import url from './Helper'
 import "./UserEducation.css"
 
 const UserEduction = () => {
-
+    
     let userdata = JSON.parse(localStorage.getItem("loginData"))
     const [userEductionInfo, setUserEductionInfo] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/userEduction", {
+        fetch(`${url}userEduction`, {
             method: "get",
             headers: {
                 'Content-Type': 'application/json',
@@ -16,24 +17,23 @@ const UserEduction = () => {
             },
         }).then((res) => res.json())
             .then((data) => {
-                console.log(data.result1)
                 setUserEductionInfo(data.result1)
             })
-    }, [])
+    }, [userdata.email]) 
 
     return (
         <>
             <h1> Your Eductions </h1>
             <div className='allEduction'>
-                {userEductionInfo.map((e) =>
-                    <>
+                {userEductionInfo.map((e,index) =>
+                    <React.Fragment key={index}>
                         <UserAllEducation
                             institute={e.institute}
                             cgpa={e.cgpa}
                             startDate={e.startDate}
                             endDate={e.endDate}
                         />
-                    </>
+                    </React.Fragment>
                 )}
             </div>
         </>

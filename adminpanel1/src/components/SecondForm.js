@@ -34,7 +34,6 @@ const SecondForm = (props) => {
             props.setError("start date must be less than end date")
             return;
         }
-
         props.data.allEduction.push(education)
 
         props.setError("")
@@ -81,7 +80,6 @@ const SecondForm = (props) => {
                 <button onClick={HandleEductionSubmit}>Submit</button>
                 <button onClick={HadleAddEduction}>Add Eduction</button>
             </div>
-
             <EducationTable allEduction={props.data.allEduction} />
         </>
     )

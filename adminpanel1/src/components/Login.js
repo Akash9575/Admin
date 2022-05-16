@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Input from '../Input'
+import url from '../allData/Helper'
 import "./Form.css"
 
 const Login = (props) => {
@@ -17,8 +18,7 @@ const Login = (props) => {
     }
 
     const userLogin = (e) => {
-
-        fetch("http://localhost:5000/userLogin", {
+        fetch(`${url}userLogin`, {
             method: "post",
             headers: {
                 'Content-Type': 'application/json'

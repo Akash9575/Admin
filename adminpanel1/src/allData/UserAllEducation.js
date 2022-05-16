@@ -1,7 +1,6 @@
 import React from 'react'
 import "./UserAllEducation.css"
 
-
 const UserAllEducation = (props) => {
 
     const start = props.startDate.toString().split('T')[0];
